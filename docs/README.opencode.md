@@ -1,6 +1,8 @@
-# Meeting Superlab — OpenCode / Codex-style install
+# Meeting Superlab — install from GitHub
 
-This file is meant to be fetched via a raw GitHub URL for tools that load install instructions from `docs/README.opencode.md`.
+**Not on app marketplaces yet.** Install from **https://github.com/Crazypeter0801/meeting-superlab** using the flows below.
+
+This file can be opened via raw GitHub URL for tools that fetch `docs/README.opencode.md`.
 
 ## Codex (CLI / App)
 
@@ -10,7 +12,7 @@ cd meeting-superlab
 codex plugin marketplace add .
 ```
 
-Then use **`/plugins`** in Codex to install **meeting-superlab** from the **Meeting Superlab** marketplace.
+Then **`/plugins`** → **Meeting Superlab** → install **meeting-superlab**.
 
 Remote (if supported):
 
@@ -20,11 +22,8 @@ codex plugin marketplace add Crazypeter0801/meeting-superlab
 
 ## Cursor
 
-```text
-/add-plugin meeting-superlab
-```
-
-Or install from disk using the repo root (contains `.cursor-plugin/plugin.json`).
+1. `git clone https://github.com/Crazypeter0801/meeting-superlab.git`  
+2. **Settings → Plugins → Install from disk** → select the repo root (contains `.cursor-plugin/plugin.json`).
 
 ## Claude Code
 
@@ -33,4 +32,4 @@ Or install from disk using the repo root (contains `.cursor-plugin/plugin.json`)
 /plugin install meeting-superlab@meeting-superlab-marketplace
 ```
 
-Full details: [README.md](../README.md) in the repository root.
+More detail: [README in repo root](https://github.com/Crazypeter0801/meeting-superlab/blob/main/README.md).

@@ -4,32 +4,33 @@ Product-design exploration skills for meeting products: clarification questions,
 
 Skills live in `skills/`; reference material in `references/`.
 
----
+**This plugin is not on the Cursor / vendor marketplaces yet.** The supported path is to **install from this GitHub repository** (clone or add the repo URL / local path in your tool), as below.
 
-## Install: Cursor
-
-**From marketplace (after the repo is listed in the Cursor plugin directory)**
-
-In Cursor Agent chat:
-
-```text
-/add-plugin meeting-superlab
-```
-
-You can also open **Settings → Plugins** and search for **Meeting Superlab**.
-
-**From a local clone (development)**
-
-1. Clone this repository.  
-2. **Settings → Plugins → Install from disk** (or equivalent), and choose the **repository root** (the folder that contains `.cursor-plugin/plugin.json`).
+Repository: **https://github.com/Crazypeter0801/meeting-superlab**
 
 ---
 
-## Install: Codex CLI / Codex App
+## Install from GitHub: Cursor
+
+1. Clone the repository (or download the ZIP and unzip).
+
+   ```bash
+   git clone https://github.com/Crazypeter0801/meeting-superlab.git
+   ```
+
+2. In Cursor: **Settings → Plugins → Install from disk** (wording may vary by version).
+
+3. Choose the **repository root folder** — the directory that contains `.cursor-plugin/plugin.json`.
+
+After a future marketplace listing, you may also use **`/add-plugin meeting-superlab`** or search **Meeting Superlab** under Plugins; until then, use the steps above.
+
+---
+
+## Install from GitHub: Codex CLI / Codex App
 
 This repo includes **`.agents/plugins/marketplace.json`** for Codex ([plugin build docs](https://developers.openai.com/codex/plugins/build)).
 
-**Clone then add the marketplace locally (recommended)**
+**Recommended — clone, then register the marketplace from the local folder**
 
 ```bash
 git clone https://github.com/Crazypeter0801/meeting-superlab.git
@@ -37,19 +38,19 @@ cd meeting-superlab
 codex plugin marketplace add .
 ```
 
-Then in Codex, open **`/plugins`**, pick the **Meeting Superlab** marketplace, and install **meeting-superlab**.
+Then in Codex, open **`/plugins`**, select the **Meeting Superlab** marketplace, and install **meeting-superlab**.
 
-**Remote marketplace (if your Codex build supports `owner/repo`)**
+**Alternative — point Codex at the GitHub repo (if your build supports `owner/repo`)**
 
 ```bash
 codex plugin marketplace add Crazypeter0801/meeting-superlab
 ```
 
-If remote add fails, use the **local `marketplace add .`** flow above.
+If that fails, use the **clone + `marketplace add .`** flow above.
 
 ---
 
-## Install: Claude Code
+## Install from GitHub: Claude Code
 
 ```text
 /plugin marketplace add Crazypeter0801/meeting-superlab
@@ -59,13 +60,13 @@ If remote add fails, use the **local `marketplace add .`** flow above.
 - Marketplace manifest: `.claude-plugin/marketplace.json` (`name`: `meeting-superlab-marketplace`).  
 - Plugin metadata: `.claude-plugin/plugin.json`.
 
-If your Claude Code build uses different slash commands, use the **Plugins** UI and paste the repository URL.
+If slash commands differ in your build, open the **Plugins** UI and add the repository **https://github.com/Crazypeter0801/meeting-superlab**.
 
 ---
 
-## OpenCode / raw docs
+## OpenCode / raw install notes
 
-Some setups fetch install notes from GitHub raw URLs. Use:
+Some tools load instructions from a raw GitHub URL:
 
 `https://raw.githubusercontent.com/Crazypeter0801/meeting-superlab/main/docs/README.opencode.md`
 
