@@ -1,84 +1,15 @@
 # Meeting Superlab
 
-Product-design exploration skills for meeting products: clarification questions, 2–3 options with tradeoffs, need framing, competitor research, insight synthesis, solution exploration, low-fidelity demo prompts, Figma handoff, and structured reviews.
+面向会议类产品的设计探索技能：澄清问题、多方案取舍、需求框定、竞品研究、洞察合成、方案发散、低保真演示、Figma 交接与评审。技能在 `skills/`，参考资料在 `references/`。
 
-Skills live in `skills/`; reference material in `references/`.
+## 安装（只有一个 GitHub 仓库）
 
-**This plugin is not on the Cursor / vendor marketplaces yet.** The supported path is to **install from this GitHub repository** (clone or add the repo URL / local path in your tool), as below.
+**链接（复制给同事即可）：** https://github.com/Crazypeter0801/meeting-superlab
 
-Repository: **https://github.com/Crazypeter0801/meeting-superlab**
+| 工具 | 能不能只靠这个链接安装？ | 怎么做 |
+|------|-------------------------|--------|
+| **Claude Code** | 可以（用仓库的 `owner/repo`） | `/plugin marketplace add Crazypeter0801/meeting-superlab` → `/plugin install meeting-superlab@meeting-superlab-marketplace` |
+| **Codex（App / CLI）** | 多数可以 | `codex plugin marketplace add Crazypeter0801/meeting-superlab`，再在 **`/plugins`** 里安装；若失败则先 `git clone` 再在该目录执行 `codex plugin marketplace add .` |
+| **Cursor** | **不能**只打开网页就装完 | 需要先 `git clone`（或下载 ZIP 解压），再在 **Settings → Plugins → Install from disk** 里选**仓库根目录**（里面有 `.cursor-plugin/plugin.json`） |
 
----
-
-## Install from GitHub: Cursor
-
-1. Clone the repository (or download the ZIP and unzip).
-
-   ```bash
-   git clone https://github.com/Crazypeter0801/meeting-superlab.git
-   ```
-
-2. In Cursor: **Settings → Plugins → Install from disk** (wording may vary by version).
-
-3. Choose the **repository root folder** — the directory that contains `.cursor-plugin/plugin.json`.
-
-After a future marketplace listing, you may also use **`/add-plugin meeting-superlab`** or search **Meeting Superlab** under Plugins; until then, use the steps above.
-
----
-
-## Install from GitHub: Codex CLI / Codex App
-
-This repo includes **`.agents/plugins/marketplace.json`** for Codex ([plugin build docs](https://developers.openai.com/codex/plugins/build)).
-
-**Recommended — clone, then register the marketplace from the local folder**
-
-```bash
-git clone https://github.com/Crazypeter0801/meeting-superlab.git
-cd meeting-superlab
-codex plugin marketplace add .
-```
-
-Then in Codex, open **`/plugins`**, select the **Meeting Superlab** marketplace, and install **meeting-superlab**.
-
-**Alternative — point Codex at the GitHub repo (if your build supports `owner/repo`)**
-
-```bash
-codex plugin marketplace add Crazypeter0801/meeting-superlab
-```
-
-If that fails, use the **clone + `marketplace add .`** flow above.
-
----
-
-## Install from GitHub: Claude Code
-
-```text
-/plugin marketplace add Crazypeter0801/meeting-superlab
-/plugin install meeting-superlab@meeting-superlab-marketplace
-```
-
-- Marketplace manifest: `.claude-plugin/marketplace.json` (`name`: `meeting-superlab-marketplace`).  
-- Plugin metadata: `.claude-plugin/plugin.json`.
-
-If slash commands differ in your build, open the **Plugins** UI and add the repository **https://github.com/Crazypeter0801/meeting-superlab**.
-
----
-
-## OpenCode / raw install notes
-
-Some tools load instructions from a raw GitHub URL:
-
-`https://raw.githubusercontent.com/Crazypeter0801/meeting-superlab/main/docs/README.opencode.md`
-
----
-
-## Versioning
-
-Keep **the same `version`** in:
-
-- `.cursor-plugin/plugin.json`  
-- `.codex-plugin/plugin.json`  
-- `.claude-plugin/plugin.json`  
-- `.claude-plugin/marketplace.json`  
-
-Currently **0.1.3**.
+没有上架应用市场时，**Codex / Claude 用 GitHub 地址即可**；**Cursor 必须先把代码放到本机**，再从磁盘安装。

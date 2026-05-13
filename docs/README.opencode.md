@@ -1,35 +1,7 @@
-# Meeting Superlab — install from GitHub
+# Meeting Superlab — 安装
 
-**Not on app marketplaces yet.** Install from **https://github.com/Crazypeter0801/meeting-superlab** using the flows below.
+**仓库：** https://github.com/Crazypeter0801/meeting-superlab
 
-This file can be opened via raw GitHub URL for tools that fetch `docs/README.opencode.md`.
-
-## Codex (CLI / App)
-
-```bash
-git clone https://github.com/Crazypeter0801/meeting-superlab.git
-cd meeting-superlab
-codex plugin marketplace add .
-```
-
-Then **`/plugins`** → **Meeting Superlab** → install **meeting-superlab**.
-
-Remote (if supported):
-
-```bash
-codex plugin marketplace add Crazypeter0801/meeting-superlab
-```
-
-## Cursor
-
-1. `git clone https://github.com/Crazypeter0801/meeting-superlab.git`  
-2. **Settings → Plugins → Install from disk** → select the repo root (contains `.cursor-plugin/plugin.json`).
-
-## Claude Code
-
-```text
-/plugin marketplace add Crazypeter0801/meeting-superlab
-/plugin install meeting-superlab@meeting-superlab-marketplace
-```
-
-More detail: [README in repo root](https://github.com/Crazypeter0801/meeting-superlab/blob/main/README.md).
+- **Claude Code**：`/plugin marketplace add Crazypeter0801/meeting-superlab` → `/plugin install meeting-superlab@meeting-superlab-marketplace`
+- **Codex**：`codex plugin marketplace add Crazypeter0801/meeting-superlab`，再 `/plugins` 安装；失败则 `git clone` 后在该目录 `codex plugin marketplace add .`
+- **Cursor**：先 `git clone` 仓库，再 **Install from disk** 选根目录（不能只靠链接一键装）
