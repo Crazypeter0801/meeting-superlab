@@ -1,0 +1,21 @@
+{
+  "name": "meeting-superlab",
+  "displayName": "Meeting Superlab",
+  "description": "Step-by-step product-design exploration workflow for meeting teams: clarification, options with tradeoffs, need framing, competitor research, insight synthesis, solution exploration, low-fi demos, Figma handoff, and multi-perspective reviews.",
+  "version": "0.1.3",
+  "author": {
+    "name": "Tencent Meeting Product Design Team"
+  },
+  "homepage": "https://github.com/Crazypeter0801/meeting-superlab",
+  "repository": "https://github.com/Crazypeter0801/meeting-superlab",
+  "license": "UNLICENSED",
+  "keywords": [
+    "product-design",
+    "ux-research",
+    "competitor-research",
+    "meeting",
+    "workflow",
+    "review"
+  ],
+  "skills": "./skills/"
+}

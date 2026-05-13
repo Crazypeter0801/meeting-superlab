@@ -1,0 +1,68 @@
+---
+name: figma-handoff
+description: Figma handoff workflow for Meeting Superlab. Use after a product/design solution direction and low-fidelity demo scope are selected, when the user wants the proposal drawn in Figma, provides a Figma file/node link, or asks to turn Meeting Superlab outputs into Figma frames, wireframes, flows, or review-ready low-fidelity screens.
+---
+
+# Figma Handoff
+
+## Goal
+
+Bridge Meeting Superlab exploration into a Figma draft without making Figma work automatic or premature.
+
+## Gate
+
+Ask whether the user wants the selected direction drawn in Figma after there is:
+
+- a clear user/scenario frame,
+- a selected solution direction,
+- a demo scope,
+- key screens/states,
+- and a low-fidelity demo prompt or equivalent outline.
+
+Do not create or modify Figma files before the user confirms and provides a Figma link or asks to create a new file.
+
+## Ask For
+
+If the user wants Figma output, ask for:
+
+- Figma file or node URL.
+- Desired target: append new page, add frames near an existing node, or update an existing draft.
+- Fidelity: black-white wireframe, structured low-fidelity UI, or closer-to-product visual draft.
+- Frame scope: tiny flow, review-ready flow, or concept flow.
+- Whether to reuse an existing Tencent Meeting design system/component area in the file.
+
+## Figma Plugin Workflow
+
+When using Figma tools, follow the available Figma plugin/skill requirements in the current environment.
+
+- Load the required Figma-use skill before calling Figma write tools when the environment instructs it.
+- If a Figma URL is provided, parse file key and node id according to the Figma workflow.
+- Prefer creating low-fidelity frames first: clear layout, labels, states, and flow notes.
+- Reuse existing design system components when available; otherwise use simple neutral wireframe primitives.
+- Do not over-polish visual style unless the user explicitly requests it.
+
+## Draft Content
+
+For each frame include:
+
+- Frame title.
+- User goal.
+- Key content blocks.
+- Primary action.
+- Secondary action or escape path.
+- Important state label: normal, empty, permission, error, external guest, cross-device, or AI trust/source state.
+
+## Output
+
+Before writing to Figma, summarize:
+
+- Frames to create.
+- States included.
+- Source solution direction.
+- Open assumptions.
+
+After writing to Figma, report:
+
+- Figma file/page/node affected.
+- What frames were created or updated.
+- What still needs product/design review.

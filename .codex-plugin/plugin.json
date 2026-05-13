@@ -1,0 +1,40 @@
+{
+  "name": "meeting-superlab",
+  "version": "0.1.3",
+  "description": "A step-by-step product-design exploration workflow for Tencent Meeting teams: ask clarifying questions, present 2-3 options with tradeoffs, frame needs, research competitors, synthesize insights, explore solutions, prepare low-fidelity demos, hand off to Figma, and run multi-perspective reviews.",
+  "author": {
+    "name": "Tencent Meeting Product Design Team",
+    "url": "https://github.com/Crazypeter0801/meeting-superlab"
+  },
+  "homepage": "https://github.com/Crazypeter0801/meeting-superlab",
+  "repository": "https://github.com/Crazypeter0801/meeting-superlab",
+  "license": "UNLICENSED",
+  "keywords": [
+    "product-design",
+    "ux-research",
+    "competitor-research",
+    "meeting",
+    "workflow",
+    "review"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Meeting Superlab",
+    "shortDescription": "AI workflows for Tencent Meeting product and design exploration",
+    "longDescription": "Meeting Superlab helps product managers and designers turn rough meeting-product needs into clarified problem frames, competitor-informed insights, solution directions, low-fidelity demo prompts, Figma handoff instructions, and structured review material. It proceeds step by step, asks targeted clarification questions before making assumptions, presents 2-3 options with pros and cons at decision points, and is inspired by Superpowers but optimized for product-design exploration rather than engineering delivery.",
+    "developerName": "Tencent Meeting Product Design Team",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Meeting Superlab to explore this meeting product need.",
+      "Research competitors and turn this idea into solution directions.",
+      "Prepare a low-fidelity demo prompt and review checklist."
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}
