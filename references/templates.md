@@ -48,7 +48,24 @@
 
 1. 先出低保真页面结构和 demo prompt：最快，适合明天讨论。
 2. 画到 Figma：需要你给我 Figma 文件或 node 链接，适合进入评审稿。
-3. 先跑多视角 review：更稳，但会晚一点出图。
+3. 先做视觉美化 polish：提升层级、间距、配色、组件状态和整体质感。
+```
+
+## Visual Polish Request
+
+```text
+请对这个界面做一轮视觉美化，不改变核心产品逻辑。
+
+输入材料：
+- 截图 / Figma 链接 / HTML demo / 页面结构：
+- 目标保真度：低保真 / 中保真 / 接近产品稿
+- 产品气质：腾讯会议专业克制 / 轻量消费 / 企业管理端 / AI 信任感 / 探索概念
+
+请输出：
+1. 视觉诊断：当前最影响美观和专业感的 5 个问题
+2. 具体修改建议：层级、间距、字体、颜色、组件、状态、文案
+3. token 建议：spacing / type / color / radius / shadow
+4. polished prompt：可用于重新生成低保真图、HTML demo 或 Figma 画稿
 ```
 
 ## Problem Definition Challenge

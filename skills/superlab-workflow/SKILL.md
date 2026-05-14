@@ -9,7 +9,7 @@ description: Entry skill for Meeting Superlab. Use when a product manager or des
 
 Guide product and design work through the Meeting Superlab SOP:
 
-`need-framing -> competitor-research -> screenshot-analysis -> insight-synthesis -> solution-exploration -> solution-convergence -> demo-and-review -> figma-handoff -> prd-ai-check -> pd-review-panel`
+`need-framing -> competitor-research -> screenshot-analysis -> insight-synthesis -> solution-exploration -> solution-convergence -> demo-and-review/mobile-prototype-artifact -> figma-handoff -> visual-polish -> meeting-design-review -> prd-ai-check -> pd-review-panel`
 
 Use this skill as the router and process owner. Keep the work moving, but do not skip problem definition, evidence-gathering, or decision records before proposing confident solutions.
 
@@ -49,7 +49,11 @@ Major decision points include:
 - Use `solution-exploration` when there is enough context to generate 2-3 meaningfully different candidate solutions.
 - Use `solution-convergence` after candidate solutions exist and the team needs a trade-off matrix, decision path, or selected v1 direction.
 - Use `demo-and-review` when the selected direction needs a low-fidelity prototype prompt, key-page outline, review doc, or next-day discussion material.
+- Use `tencent-meeting-mobile-design-system` when the work mentions Tencent Meeting mobile, Apple-like visual language, iOS-style product UI, design tokens, mobile components, or the latest Tencent Meeting design system.
+- Use `mobile-prototype-artifact` when the selected direction should become mobile screens, an Open Design prompt, an HTML artifact spec, iPhone frames, or a Figma generation prompt.
 - Use `figma-handoff` after a solution direction and demo scope are selected, when the user may want the draft drawn into a Figma file or provides a Figma link.
+- Use `visual-polish` when a generated interface, Figma draft, screenshot, or prototype needs better hierarchy, spacing, typography, color, component states, visual polish, or a less generic AI-generated feel.
+- Use `meeting-design-review` when a mobile design, artifact, prompt, or Figma draft needs a structured product/UI quality gate before review.
 - Use `prd-ai-check` when a PRD v0.5, structured PRD draft, or product spec needs the SOP AI checker, revision record, and multilingual copy table.
 - Use `pd-review-panel` when there is a draft need frame, competitor analysis, solution proposal, or demo prompt that needs multi-perspective critique.
 
@@ -99,11 +103,12 @@ Once there is at least a selected or recommended solution direction, proactively
 下一步我可以继续往可视化交付推进。你想选哪种？
 
 1. 先出低保真页面结构和 demo prompt：最快，适合明天讨论。
-2. 画到 Figma：需要你给我 Figma 文件或 node 链接，适合进入评审稿。
-3. 先跑多视角 review：更稳，但会晚一点出图。
+2. 出腾讯会议 Apple-like 移动端 artifact prompt：适合丢进 Open Design、HTML 原型或 Figma 生成。
+3. 画到 Figma：需要你给我 Figma 文件或 node 链接，适合进入评审稿。
 ```
 
 If the user chooses Figma, route to `figma-handoff`. If the user chooses low-fidelity output, route to `demo-and-review`.
+If the user chooses mobile artifact output, route to `mobile-prototype-artifact`, and apply `tencent-meeting-mobile-design-system` when the target is mobile. After any visual draft exists, offer `visual-polish` and `meeting-design-review`.
 
 ## Default Flow
 
@@ -117,10 +122,12 @@ If the user chooses Figma, route to `figma-handoff`. If the user chooses low-fid
 8. Run solution convergence: five-dimension trade-off matrix and decision record.
 9. Offer prototype/Figma/review next moves; wait for selection.
 10. Present 2-3 demo scope options; wait for selection.
-11. Produce a low-fidelity prototype prompt and review checklist.
+11. Produce a low-fidelity prototype prompt, or use `mobile-prototype-artifact` for Tencent Meeting mobile/Open Design output.
 12. Ask whether the user wants the selected direction drawn in Figma; if yes, ask for a Figma file/node link and use `figma-handoff`.
-13. If the user has or wants a PRD, use `prd-ai-check` after there is a PRD v0.5 or sufficiently structured draft.
-14. Ask whether to run a product/design/competitor/risk review panel.
+13. If a visual draft exists, ask whether to run `visual-polish` before review.
+14. Run `meeting-design-review` when the mobile draft or prompt should be checked before stakeholder review.
+15. If the user has or wants a PRD, use `prd-ai-check` after there is a PRD v0.5 or sufficiently structured draft.
+16. Ask whether to run a product/design/competitor/risk review panel.
 
 ## Output Contract
 
@@ -133,7 +140,10 @@ End full-flow work with:
 - Trade-off matrix and decision record.
 - Recommended v1 direction.
 - Low-fidelity demo prompt.
+- Tencent Meeting mobile design-system assumptions and artifact prompt when mobile output is requested.
 - Figma handoff question or Figma draft plan when requested.
+- Visual polish notes or polished UI prompt when requested.
+- Meeting design review verdict when a draft or prompt exists.
 - PRD AI Check findings when requested.
 - Review questions and missing evidence.
 

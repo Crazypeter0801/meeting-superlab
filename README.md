@@ -1,6 +1,6 @@
 # Meeting Superlab
 
-面向会议类产品的设计探索技能：六步 SOP（问题定义 → 竞品研究 → 创意发散 → 取舍收敛 → 低保真 / Figma 交接 → PRD AI Check）及多视角评审；含 `solution-convergence`、`prd-ai-check` 等技能。内容在 `skills/`，参考资料在 `references/`（含 `sop-v0.8.md`）。当前版本 **0.1.5**。
+面向会议类产品的设计探索技能：六步 SOP（问题定义 → 竞品研究 → 创意发散 → 取舍收敛 → 低保真 / Figma / Open Design 交接 → PRD AI Check）及多视角评审；含腾讯会议 **类 Apple 移动端设计规范**、**视觉精修**、**设计评审**、**移动原型产物** 等技能（见 `skills/`）。参考资料在 `references/`（含 `sop-v0.8.md`）。当前版本 **0.1.7**。
 
 ## 安装（只有一个 GitHub 仓库）
 

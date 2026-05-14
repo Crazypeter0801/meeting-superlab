@@ -1,7 +1,7 @@
 {
   "name": "meeting-superlab",
-  "description": "Six-step product-design SOP: clarify vague needs, problem definition, research, divergence, convergence, low-fi/Figma, PRD check, reviews.",
-  "version": "0.1.5",
+  "description": "Six-step SOP for meeting products: research, divergence/convergence, prototypes, Tencent Meeting mobile design language, visual polish, PRD check, reviews.",
+  "version": "0.1.7",
   "author": {
     "name": "Tencent Meeting Product Design Team"
   },
@@ -13,6 +13,9 @@
     "ux-research",
     "competitor-research",
     "meeting",
+    "mobile-design",
+    "open-design",
+    "apple-like-ui",
     "workflow",
     "review"
   ]

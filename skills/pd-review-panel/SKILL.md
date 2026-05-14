@@ -17,6 +17,7 @@ Default modes:
 
 - Lightweight review: product, user, and design perspectives. Pros: fast. Cons: may miss platform or risk issues.
 - Full panel: product, user, design, competitor, platform, business, and risk/AI-trust perspectives. Pros: strongest before team review. Cons: longer.
+- Visual polish review: hierarchy, spacing, typography, color, component states, responsive quality, and product-grade feel. Pros: best after a draft exists. Cons: does not validate product strategy.
 - Evidence audit: focus only on missing evidence, weak assumptions, and next research inputs. Pros: useful before deeper solution work. Cons: less help polishing the proposal.
 - SOP gate review: check whether Step 1-6 artifacts are ready for leader review. Pros: best before sharing upward. Cons: less creative.
 
@@ -27,6 +28,7 @@ Dispatch independent reviewers with narrow instructions and the same artifact:
 - Product reviewer: goal clarity, scope, assumptions, priority, decision points.
 - User reviewer: role fit, scenario realism, task flow, friction, accessibility of the idea.
 - Design reviewer: information architecture, states, hierarchy, interaction clarity, demo readiness.
+- Visual polish reviewer: aesthetic coherence, spacing rhythm, type scale, color discipline, depth, states, responsive fit, and whether the UI looks product-grade rather than generic.
 - Competitor reviewer: missing references, weak evidence, copied patterns, differentiation.
 - Platform reviewer: permissions, privacy, cross-device, AI, recording, IM, notification, enterprise constraints.
 - Business reviewer: value, adoption, retention, growth, enterprise admin or paid-feature implications.

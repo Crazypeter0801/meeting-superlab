@@ -69,4 +69,5 @@ After writing to Figma, report:
 
 - Figma file/page/node affected.
 - What frames were created or updated.
+- Whether a `visual-polish` pass is recommended before stakeholder review.
 - What still needs product/design review.

@@ -21,6 +21,8 @@ Before producing the final demo prompt, offer 2-3 demo scope options with pros, 
 
 If the user says they want "出图" but has not provided a Figma link, offer low-fidelity image/prototype prompt first and ask whether to later hand off to Figma.
 
+If the target is Tencent Meeting mobile, offer `mobile-prototype-artifact` as the next step after the low-fidelity structure is agreed. If the user explicitly asks for Apple-like, iOS-style, latest Tencent Meeting mobile design system, Open Design, HTML artifact, or phone-frame output, route directly to `mobile-prototype-artifact` and apply `tencent-meeting-mobile-design-system`.
+
 Default scope options:
 
 - Tiny flow demo: 1 entry point + 1 core screen + 1 key state. Pros: fastest for discussion. Cons: may miss edge cases.
@@ -36,6 +38,7 @@ Default scope options:
 - Include normal, empty, permission/error, and cross-role states when relevant.
 - Include weak-network, role-switching, reward/entitlement delay, or cross-device states when the scenario can fail there.
 - Borrow interaction lessons from competitors without copying visual identity.
+- For Tencent Meeting mobile, start with low-fidelity structure first, then apply Apple-like mobile tokens only after the flow and state set are clear.
 
 ## Required Demo Prompt Content
 
@@ -59,7 +62,10 @@ Provide:
 - Recommended direction.
 - Decision record from `solution-convergence` when available.
 - Demo prompt.
+- Mobile artifact prompt via `mobile-prototype-artifact` when the target is Tencent Meeting mobile/Open Design output.
 - Figma handoff question: always ask whether the user wants this drawn in Figma, and invite them to provide a Figma file or node link.
+- Visual polish question: ask whether the user wants a polish pass to improve hierarchy, spacing, color, typography, and component states before review.
+- Design review question: ask whether to run `meeting-design-review` before stakeholder review.
 - Product questions.
 - Design questions.
 - Engineering/platform questions.
