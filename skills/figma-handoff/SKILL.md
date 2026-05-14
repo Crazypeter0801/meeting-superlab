@@ -1,6 +1,6 @@
 ---
 name: figma-handoff
-description: Figma handoff workflow for Meeting Superlab. Use after a product/design solution direction has converged and a low-fidelity demo scope is selected, when the user wants the proposal drawn in Figma, provides a Figma file/node link, or asks to turn Meeting Superlab outputs into Figma frames, wireframes, flows, or review-ready low-fidelity screens.
+description: Figma handoff workflow for Meeting Superlab. Use after a product/design solution direction has converged and a low-fidelity demo scope is selected, when the user wants the proposal drawn in Figma, provides a Figma file/node link, or asks to turn Meeting Superlab outputs into Figma frames, wireframes, flows, output images, or review-ready low-fidelity screens. Also use when the user asks 是否可以画出来, 出图, 画到 Figma, 低保真稿, 原型图, or 可视化方案.
 ---
 
 # Figma Handoff
@@ -21,6 +21,8 @@ Ask whether the user wants the selected direction drawn in Figma after there is:
 - and a low-fidelity demo prompt or equivalent outline.
 
 Do not create or modify Figma files before the user confirms and provides a Figma link or asks to create a new file.
+
+When Figma is not yet possible because the user has not provided a link, say so and offer a low-fidelity page structure or demo prompt as the immediate fallback.
 
 ## Ask For
 

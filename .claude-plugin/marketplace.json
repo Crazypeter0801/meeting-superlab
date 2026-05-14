@@ -7,8 +7,8 @@
   "plugins": [
     {
       "name": "meeting-superlab",
-      "description": "Six-step product-design SOP: problem → research → diverge → converge → prototype/Figma → PRD check → reviews.",
-      "version": "0.1.4",
+      "description": "Six-step SOP: clarify vague needs → problem → research → diverge → converge → prototype/Figma → PRD check → reviews.",
+      "version": "0.1.5",
       "source": "./",
       "author": {
         "name": "Tencent Meeting Product Design Team"

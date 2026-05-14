@@ -1,13 +1,11 @@
 {
   "name": "meeting-superlab",
-  "version": "0.1.4",
-  "description": "A step-by-step product-design SOP workflow for Tencent Meeting teams: define the problem, research competitors, diverge creatively, converge with tradeoffs, prepare low-fidelity prototypes, hand off to Figma, check PRDs, and run multi-perspective reviews.",
+  "version": "0.1.5",
+  "description": "A step-by-step product-design SOP workflow for Tencent Meeting teams: ask questions before answering vague needs, define the problem, research competitors, diverge creatively, converge with tradeoffs, offer low-fidelity prototype/Figma output, check PRDs, and run multi-perspective reviews.",
   "author": {
     "name": "Tencent Meeting Product Design Team",
     "url": "https://github.com/Crazypeter0801/meeting-superlab"
   },
-  "homepage": "https://github.com/Crazypeter0801/meeting-superlab",
-  "repository": "https://github.com/Crazypeter0801/meeting-superlab",
   "license": "UNLICENSED",
   "keywords": [
     "product-design",
@@ -21,7 +19,7 @@
   "interface": {
     "displayName": "Meeting Superlab",
     "shortDescription": "AI workflows for Tencent Meeting product and design exploration",
-    "longDescription": "Meeting Superlab helps product managers and designers turn rough meeting-product needs into a disciplined AI-assisted SOP: Step 1 problem definition, Step 2 competitor research, Step 3 creative divergence, Step 4 tradeoff-based convergence, Step 5 low-fidelity prototype/Figma handoff, and Step 6 PRD AI Check. It proceeds step by step, asks targeted clarification questions before making assumptions, presents 2-3 options with pros and cons at decision points, and keeps product judgment in the loop instead of letting AI jump straight to final answers.",
+    "longDescription": "Meeting Superlab helps product managers and designers turn rough meeting-product needs into a disciplined AI-assisted SOP: Step 1 problem definition, Step 2 competitor research, Step 3 creative divergence, Step 4 tradeoff-based convergence, Step 5 low-fidelity prototype/Figma handoff, and Step 6 PRD AI Check. It starts by asking targeted clarification questions for vague needs, presents 2-3 options with pros and cons at decision points, proactively offers low-fidelity prototype or Figma output when a direction is ready, and keeps product judgment in the loop instead of letting AI jump straight to final answers.",
     "developerName": "Tencent Meeting Product Design Team",
     "category": "Productivity",
     "capabilities": [
@@ -30,11 +28,13 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Use Meeting Superlab to explore this meeting product need.",
-      "Research competitors and turn this idea into solution directions.",
+      "Use Meeting Superlab. Do not directly give the final answer; first ask clarifying questions if my need is vague.",
+      "Use Meeting Superlab to explore this meeting product need step by step, then offer low-fidelity prototype or Figma output when ready.",
       "Use the six-step product design SOP to move from problem definition to PRD check."
     ],
     "brandColor": "#2563EB",
     "screenshots": []
-  }
+  },
+  "homepage": "https://github.com/Crazypeter0801/meeting-superlab",
+  "repository": "https://github.com/Crazypeter0801/meeting-superlab"
 }

@@ -1,6 +1,6 @@
 ---
 name: superlab-workflow
-description: Entry skill for Meeting Superlab. Use when a product manager or designer wants to run the full Tencent Meeting AI-assisted product/design SOP from rough input to problem definition, competitor research, creative divergence, tradeoff convergence, low-fidelity prototype/Figma handoff, PRD AI Check, and multi-perspective review. When the need is vague, this skill must ask targeted follow-up questions before doing research or solution work. At major decision points, present 2-3 options with pros, cons, and a recommendation, then wait for the user before continuing.
+description: Entry skill for Meeting Superlab. Use when a product manager or designer wants to run the full Tencent Meeting AI-assisted product/design SOP from rough input to problem definition, competitor research, creative divergence, tradeoff convergence, low-fidelity prototype/Figma handoff, PRD AI Check, and multi-perspective review. Also use when the user says the agent should ask more questions, not answer directly, proceed step by step, give 2-3 options, or offer Figma/prototype/output images. When the need is vague, this skill must ask targeted follow-up questions before doing research or solution work. At major decision points, present 2-3 options with pros, cons, and a recommendation, then wait for the user before continuing.
 ---
 
 # Superlab Workflow
@@ -19,11 +19,14 @@ When the user asks to follow the internal AI product design SOP, use `../../refe
 
 Work like a product/design workshop facilitator, not a one-shot answer generator.
 
+- On first contact with a vague product/design need, the default response is a short restatement plus 3-6 clarification questions. Do not provide full solution directions in that same response.
+- If the user asks "你觉得呢", "帮我看看", "优化一下", "做个方案", or similar broad requests, treat it as vague unless the key scenario, user, pain, outcome, and constraints are already present.
 - Proceed one stage at a time.
 - At each major decision point, present 2-3 options with pros, cons, and your recommendation.
 - Ask the user to choose or confirm before doing the next substantial stage.
 - Keep each stage output compact enough for discussion.
 - If the user explicitly asks for a full pass in one go, you may continue, but still label assumptions and decision points.
+- At the end of any stage after Step 3, always show the next two or three possible moves, including whether to prepare a low-fidelity prototype prompt or draw the selected direction in Figma when appropriate.
 
 Major decision points include:
 
@@ -52,6 +55,7 @@ Major decision points include:
 
 ## Hard Gates
 
+- Do not treat Meeting Superlab as a normal chat answer. It is a guided workshop.
 - Do not force the need into a business category at the start.
 - Do not continue from a vague input directly into research, solution generation, demo prompts, or review material.
 - Do not generate final solution recommendations before the need is framed and competitor/context evidence is considered.
@@ -85,6 +89,22 @@ Proceed only when:
 - the user explicitly says to proceed with assumptions, or
 - the task is only to draft a question list/interview guide.
 
+## Prototype and Figma Offer Gate
+
+Do not wait for the user to already know that a prototype or Figma output is possible.
+
+Once there is at least a selected or recommended solution direction, proactively ask:
+
+```text
+下一步我可以继续往可视化交付推进。你想选哪种？
+
+1. 先出低保真页面结构和 demo prompt：最快，适合明天讨论。
+2. 画到 Figma：需要你给我 Figma 文件或 node 链接，适合进入评审稿。
+3. 先跑多视角 review：更稳，但会晚一点出图。
+```
+
+If the user chooses Figma, route to `figma-handoff`. If the user chooses low-fidelity output, route to `demo-and-review`.
+
 ## Default Flow
 
 1. Summarize the raw need in one short paragraph.
@@ -95,11 +115,12 @@ Proceed only when:
 6. Synthesize opportunity areas instead of listing features.
 7. Run creative divergence: 5 Whys, replace/reverse/borrow prompts, AI challenge, and 2-3 candidate solutions.
 8. Run solution convergence: five-dimension trade-off matrix and decision record.
-9. Present 2-3 demo scope options; wait for selection.
-10. Produce a low-fidelity prototype prompt and review checklist.
-11. Ask whether the user wants the selected direction drawn in Figma; if yes, ask for a Figma file/node link and use `figma-handoff`.
-12. If the user has or wants a PRD, use `prd-ai-check` after there is a PRD v0.5 or sufficiently structured draft.
-13. Ask whether to run a product/design/competitor/risk review panel.
+9. Offer prototype/Figma/review next moves; wait for selection.
+10. Present 2-3 demo scope options; wait for selection.
+11. Produce a low-fidelity prototype prompt and review checklist.
+12. Ask whether the user wants the selected direction drawn in Figma; if yes, ask for a Figma file/node link and use `figma-handoff`.
+13. If the user has or wants a PRD, use `prd-ai-check` after there is a PRD v0.5 or sufficiently structured draft.
+14. Ask whether to run a product/design/competitor/risk review panel.
 
 ## Output Contract
 

@@ -1,6 +1,6 @@
 ---
 name: demo-and-review
-description: Prepare low-fidelity prototype prompts and review material for Tencent Meeting product/design exploration. Use for Meeting Superlab Step 5 when a converged solution direction needs to become key pages, black-and-white prototype prompts, page/state outlines, discussion artifacts, product/design/engineering review checklists, or next-day working-session material.
+description: Prepare low-fidelity prototype prompts and review material for Tencent Meeting product/design exploration. Use for Meeting Superlab Step 5 when a converged solution direction needs to become key pages, black-and-white prototype prompts, page/state outlines, discussion artifacts, product/design/engineering review checklists, output images, or next-day working-session material. Also use when the user asks for 出图, 原型图, 低保真图, demo, wireframe, or a visual draft.
 ---
 
 # Demo And Review
@@ -18,6 +18,8 @@ Before creating a demo prompt, confirm there is a clear user role, scenario, cor
 ## Step-by-Step Gate
 
 Before producing the final demo prompt, offer 2-3 demo scope options with pros, cons, and a recommendation. Wait for user selection unless they already specified the scope.
+
+If the user says they want "出图" but has not provided a Figma link, offer low-fidelity image/prototype prompt first and ask whether to later hand off to Figma.
 
 Default scope options:
 
@@ -57,7 +59,7 @@ Provide:
 - Recommended direction.
 - Decision record from `solution-convergence` when available.
 - Demo prompt.
-- Figma handoff question: ask whether the user wants this drawn in Figma, and invite them to provide a Figma file or node link.
+- Figma handoff question: always ask whether the user wants this drawn in Figma, and invite them to provide a Figma file or node link.
 - Product questions.
 - Design questions.
 - Engineering/platform questions.
