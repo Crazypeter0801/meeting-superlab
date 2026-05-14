@@ -1,7 +1,7 @@
 {
   "name": "meeting-superlab",
-  "version": "0.1.3",
-  "description": "A step-by-step product-design exploration workflow for Tencent Meeting teams: ask clarifying questions, present 2-3 options with tradeoffs, frame needs, research competitors, synthesize insights, explore solutions, prepare low-fidelity demos, hand off to Figma, and run multi-perspective reviews.",
+  "version": "0.1.4",
+  "description": "A step-by-step product-design SOP workflow for Tencent Meeting teams: define the problem, research competitors, diverge creatively, converge with tradeoffs, prepare low-fidelity prototypes, hand off to Figma, check PRDs, and run multi-perspective reviews.",
   "author": {
     "name": "Tencent Meeting Product Design Team",
     "url": "https://github.com/Crazypeter0801/meeting-superlab"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Meeting Superlab",
     "shortDescription": "AI workflows for Tencent Meeting product and design exploration",
-    "longDescription": "Meeting Superlab helps product managers and designers turn rough meeting-product needs into clarified problem frames, competitor-informed insights, solution directions, low-fidelity demo prompts, Figma handoff instructions, and structured review material. It proceeds step by step, asks targeted clarification questions before making assumptions, presents 2-3 options with pros and cons at decision points, and is inspired by Superpowers but optimized for product-design exploration rather than engineering delivery.",
+    "longDescription": "Meeting Superlab helps product managers and designers turn rough meeting-product needs into a disciplined AI-assisted SOP: Step 1 problem definition, Step 2 competitor research, Step 3 creative divergence, Step 4 tradeoff-based convergence, Step 5 low-fidelity prototype/Figma handoff, and Step 6 PRD AI Check. It proceeds step by step, asks targeted clarification questions before making assumptions, presents 2-3 options with pros and cons at decision points, and keeps product judgment in the loop instead of letting AI jump straight to final answers.",
     "developerName": "Tencent Meeting Product Design Team",
     "category": "Productivity",
     "capabilities": [
@@ -32,7 +32,7 @@
     "defaultPrompt": [
       "Use Meeting Superlab to explore this meeting product need.",
       "Research competitors and turn this idea into solution directions.",
-      "Prepare a low-fidelity demo prompt and review checklist."
+      "Use the six-step product design SOP to move from problem definition to PRD check."
     ],
     "brandColor": "#2563EB",
     "screenshots": []

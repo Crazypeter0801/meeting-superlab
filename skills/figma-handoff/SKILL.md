@@ -1,6 +1,6 @@
 ---
 name: figma-handoff
-description: Figma handoff workflow for Meeting Superlab. Use after a product/design solution direction and low-fidelity demo scope are selected, when the user wants the proposal drawn in Figma, provides a Figma file/node link, or asks to turn Meeting Superlab outputs into Figma frames, wireframes, flows, or review-ready low-fidelity screens.
+description: Figma handoff workflow for Meeting Superlab. Use after a product/design solution direction has converged and a low-fidelity demo scope is selected, when the user wants the proposal drawn in Figma, provides a Figma file/node link, or asks to turn Meeting Superlab outputs into Figma frames, wireframes, flows, or review-ready low-fidelity screens.
 ---
 
 # Figma Handoff
@@ -15,6 +15,7 @@ Ask whether the user wants the selected direction drawn in Figma after there is:
 
 - a clear user/scenario frame,
 - a selected solution direction,
+- a decision record or explicit fast-draft exception,
 - a demo scope,
 - key screens/states,
 - and a low-fidelity demo prompt or equivalent outline.
@@ -51,6 +52,7 @@ For each frame include:
 - Primary action.
 - Secondary action or escape path.
 - Important state label: normal, empty, permission, error, external guest, cross-device, or AI trust/source state.
+- SOP note when useful: which Step 1 problem and Step 4 decision the frame supports.
 
 ## Output
 

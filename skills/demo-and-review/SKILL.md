@@ -1,6 +1,6 @@
 ---
 name: demo-and-review
-description: Prepare low-fidelity demo prompts and review material for Tencent Meeting product/design exploration. Use when a solution direction needs to become a black-and-white prototype prompt, page/state outline, discussion artifact, product/design/engineering review checklist, or next-day working-session material.
+description: Prepare low-fidelity prototype prompts and review material for Tencent Meeting product/design exploration. Use for Meeting Superlab Step 5 when a converged solution direction needs to become key pages, black-and-white prototype prompts, page/state outlines, discussion artifacts, product/design/engineering review checklists, or next-day working-session material.
 ---
 
 # Demo And Review
@@ -9,9 +9,11 @@ description: Prepare low-fidelity demo prompts and review material for Tencent M
 
 Turn a direction into a practical artifact for discussion. The output should help product and design review the idea, not pretend to be final UI.
 
+This is Step 5 of the SOP. It translates the selected direction into reviewable key pages and states.
+
 ## Preconditions
 
-Before creating a demo prompt, confirm there is a clear user role, scenario, core flow, and recommended direction. If these are missing, ask clarification questions or return to `need-framing` / `solution-exploration`.
+Before creating a demo prompt, confirm there is a clear user role, scenario, core flow, and recommended direction. If there is no trade-off decision record, route to `solution-convergence` first unless the user asks for a fast rough draft.
 
 ## Step-by-Step Gate
 
@@ -20,7 +22,7 @@ Before producing the final demo prompt, offer 2-3 demo scope options with pros, 
 Default scope options:
 
 - Tiny flow demo: 1 entry point + 1 core screen + 1 key state. Pros: fastest for discussion. Cons: may miss edge cases.
-- Review-ready flow: entry point + core path + empty/error/permission state. Pros: best default for product/design review. Cons: slightly more work.
+- Review-ready flow: entry point + core path + empty/error/permission/weak-network state. Pros: best default for product/design review. Cons: slightly more work.
 - Concept demo: broader exploratory flow with AI/collaboration behavior. Pros: good for vision discussion. Cons: easier to drift from feasibility.
 
 ## Demo Prompt Defaults
@@ -30,6 +32,7 @@ Default scope options:
 - Avoid polished visual style unless requested.
 - Use concise meeting-product copy.
 - Include normal, empty, permission/error, and cross-role states when relevant.
+- Include weak-network, role-switching, reward/entitlement delay, or cross-device states when the scenario can fail there.
 - Borrow interaction lessons from competitors without copying visual identity.
 
 ## Required Demo Prompt Content
@@ -52,6 +55,7 @@ Provide:
 - Requirement understanding.
 - Evidence used.
 - Recommended direction.
+- Decision record from `solution-convergence` when available.
 - Demo prompt.
 - Figma handoff question: ask whether the user wants this drawn in Figma, and invite them to provide a Figma file or node link.
 - Product questions.
@@ -59,5 +63,6 @@ Provide:
 - Engineering/platform questions.
 - Evidence still missing.
 - Suggested next iteration.
+- PRD readiness note: whether the prototype has enough structure to support `prd-ai-check`.
 
 Use `../../references/templates.md` for copyable structures.
